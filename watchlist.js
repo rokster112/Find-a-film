@@ -4,6 +4,7 @@ const homeBtn = document.querySelector(".nav-watchlist")
 
   async function getMovies() {
     main.replaceChildren()
+    main.innerHTML = ""
     for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i)
       if (key !== "backstopjs" && key) {
@@ -34,7 +35,7 @@ const homeBtn = document.querySelector(".nav-watchlist")
       } 
 
       }
-      if (localStorage.length) {
+      if (localStorage.length === 0) {
         main.innerHTML = `<p style="color: #DFDDDD; font-size: 18px;">Your watchlist is looking a little empty...</p>
                           <div class="watchlist-noContent">
                           <a class="card-button" id="home-link" href="index.html">+</a><p style="color: black; font-size: 14px; font-weight: 700;">Let’s add some movies!</p>
