@@ -1,0 +1,254 @@
+
+html {
+  font-size: 12px;
+}
+
+body {
+  margin: 0;
+}
+
+.nav {
+  width: 550px;
+  height: 208px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-position: 0 720px;
+  position: absolute;
+  z-index: 1;
+  left: calc(50% - 275px);
+  background-image: url("https://s3-alpha-sig.figma.com/img/dafe/fd94/40637dd9b0240098474b6d8dd9487d8c?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=FBfuJ9DpfzYkR7dr8D3LRm74hn-Z5fXsnEzf8UfOhu5inzRyPCUoUAOJmK6ryHbNqLvr5PMoUyoOe3iHAGo09PUkB6o4D0nHBfVoDVAQxd2a-leMtoTvTJsbpZ9NhRVGNxp5A~-P7bNVxUfNznbouoa4P29QyjZTGqjmaDW0SAOMR2sDx~6R9Y6cYOsNXIrYM7Emwkb-78k8p~jucpAJRyM2ZiiT7Pbb1v~9upNslKzo1UwpMnd-bdwpI6v2BW4BPkBcR-~-7Byg3W1GSR8krCA2RHe9H4hjZ6DweT-fQ4kZE4Ymnt3WV9Jp86oNrKhkJ-QALDP2f4EPCtVpGI2dRQ__");
+  margin-top: 46px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.nav::before {
+  content: "";
+  position: absolute;
+  width: 550px;
+  height: 208px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/* .nav {
+  width: 550px;
+  height: 208px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-position: 0 720px;
+} */
+
+/* .nav::before {
+  content: "";
+  position: fixed;
+  width: 550px;
+  height: 208px;
+  background-image: url("https://s3-alpha-sig.figma.com/img/dafe/fd94/40637dd9b0240098474b6d8dd9487d8c?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=FBfuJ9DpfzYkR7dr8D3LRm74hn-Z5fXsnEzf8UfOhu5inzRyPCUoUAOJmK6ryHbNqLvr5PMoUyoOe3iHAGo09PUkB6o4D0nHBfVoDVAQxd2a-leMtoTvTJsbpZ9NhRVGNxp5A~-P7bNVxUfNznbouoa4P29QyjZTGqjmaDW0SAOMR2sDx~6R9Y6cYOsNXIrYM7Emwkb-78k8p~jucpAJRyM2ZiiT7Pbb1v~9upNslKzo1UwpMnd-bdwpI6v2BW4BPkBcR-~-7Byg3W1GSR8krCA2RHe9H4hjZ6DweT-fQ4kZE4Ymnt3WV9Jp86oNrKhkJ-QALDP2f4EPCtVpGI2dRQ__");
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  background-size: cover;
+  background-position: 0 720px;
+} */
+
+.nav-headings__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(324px + 135px);
+  margin-top: 82px;
+}
+
+.nav-headings__container > * {
+  color: white;
+}
+
+.nav-title {
+  font-size: 46px;
+  margin: 0;
+}
+
+.nav-watchlist {
+  font-size: 14px;
+}
+
+.nav-search__container {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  height: 38px;
+  position: absolute;
+  top: calc(208px - 19px);
+}
+
+.nav-search__btn {
+  width: 120px;
+  background-color: #F9FAFB;
+  border: 1px solid #D1D5DB;
+  border-radius: 6px;
+}
+
+.nav-input {
+  width: calc(500px - 120px);
+  border-radius: 6px;
+  border: 1px solid #D1D5DB;
+  height: 100%;
+  padding-left: 30px;
+}
+
+.nav-search__icon {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  left: 10px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 550px;
+  margin: 0 auto;
+  padding-top: 44px;
+  position: relative;
+  top: 252px;
+  border: 1px solid black;
+  height: 592px;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+
+.main-onload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 30vh;
+}
+
+.main-onload__image {
+  width: 70px;
+  height: 61px;
+}
+
+.main-onload__text {
+  font-size: 18px;
+  color: #DFDDDD;
+}
+
+.main-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 500px;
+  height: 200px;
+  justify-content: space-between;
+}
+
+
+.card-image-container {
+  height: 200px;
+  width: 135px;
+}
+
+.card-image {
+  height: 100%;
+  width: 100%;
+}
+
+.card-content__heading {
+  display: flex;
+  flex-direction: row;
+  width: 324px;
+  align-items: center;
+}
+
+.card-title {
+  margin-right: 8px;
+}
+
+.card-content__main {
+  display: flex;
+  flex-direction: row;
+  width: 324px;
+}
+
+.card-button__container {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.card-button {
+  width: 16px;
+  height: 16px;
+  align-self: center;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.card-duration {
+  margin-right: 19px;
+}
+
+.card-genre {
+  margin-right: 30px;
+}
+
+
+.description {
+  width: 324px;
+  height: 60px;
+  font-size: 14px;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  width: 500px;
+  background-color: #E5E7EB;
+  margin-block: 10px 8px;
+}
+
+button {
+  cursor: pointer;
+
+}
+
+.watchlist-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 550px;
+  margin: 0 auto;
+  padding-top: 44px;
+  position: relative;
+  top: 252px;
+  border: 1px solid black;
+  height: 592px;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+
+a {
+  text-decoration: none;
+}
+
+.watchlist-noContent {
+  display: flex;
+}
