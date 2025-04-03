@@ -6,9 +6,8 @@ const homeBtn = document.querySelector(".nav-watchlist")
     main.replaceChildren()
     for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i)
-      console.log(key)
       if (key !== "backstopjs" && key) {
-        const res = await fetch(`http://www.omdbapi.com/?&apikey=e5c482bc&i=${key}`)
+        const res = await fetch(`https://www.omdbapi.com/?&apikey=e5c482bc&i=${key}`)
         const data = await res.json()
         main.insertAdjacentHTML('beforeend', `<div class="main-card">
         <div class="card-image-container"><img class="card-image" src=${data.Poster} alt=${data.Title}></div>
@@ -32,7 +31,6 @@ const homeBtn = document.querySelector(".nav-watchlist")
           localStorage.removeItem(key)
           location.reload()
         })
-        console.log(data)
       } else if (localStorage.length < 2 && !key.startsWith("tt")) {
         main.innerHTML = `<p style="color: #DFDDDD; font-size: 18px;">Your watchlist is looking a little empty...</p>
                           <div class="watchlist-noContent">

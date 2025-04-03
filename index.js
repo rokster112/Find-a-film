@@ -10,12 +10,11 @@ async function handleChange(e) {
     e.preventDefault()
     searchRes = []
     let value = searchInput.value
-    console.log(value)
-    const res = await fetch(`http://www.omdbapi.com/?&apikey=e5c482bc&s=${value}`)
+    const res = await fetch(`https://www.omdbapi.com/?&apikey=e5c482bc&s=${value}`)
     const data = await res.json()
     if (data.Response === "True") {
     for (const item of data.Search) {
-      const res2 = await fetch(`http://www.omdbapi.com/?&apikey=e5c482bc&i=${item.imdbID}`)
+      const res2 = await fetch(`https://www.omdbapi.com/?&apikey=e5c482bc&i=${item.imdbID}`)
       const data2 = await res2.json()
       searchRes.push(data2)
     }
@@ -51,13 +50,10 @@ async function handleChange(e) {
   submitButton.addEventListener("click", handleChange)
 
   async function addMovie(e) {
-    const res = await fetch(`http://www.omdbapi.com/?&apikey=e5c482bc&i=${e.target.id}`)
+    const res = await fetch(`https://www.omdbapi.com/?&apikey=e5c482bc&i=${e.target.id}`)
     const data = await res.json()
-    console.log(data)
     localStorage.setItem(e.target.id, JSON.stringify(data))
     document.querySelector(`#${e.target.id}`).innerHTML = '✓'
   }
 
-  document.querySelector(".nav-watchlist").addEventListener("click", function(event) {
-    console.log("Link clicked from home!");
-});
+  document.querySelector(".nav-watchlist").addEventListener("click", () => {});
