@@ -3,7 +3,6 @@ const main = document.querySelector(".watchlist-main")
 const homeBtn = document.querySelector(".nav-watchlist")
 
   async function getMovies() {
-    console.log(!localStorage)
     main.replaceChildren()
     for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i)
@@ -32,14 +31,15 @@ const homeBtn = document.querySelector(".nav-watchlist")
           localStorage.removeItem(key)
           location.reload()
         })
-      } else if ((localStorage.length < 2 && !key.startsWith("tt")) || localStorage.length === 0) {
+      } 
+
+      }
+      if (localStorage.length) {
         main.innerHTML = `<p style="color: #DFDDDD; font-size: 18px;">Your watchlist is looking a little empty...</p>
                           <div class="watchlist-noContent">
                           <a class="card-button" id="home-link" href="index.html">+</a><p style="color: black; font-size: 14px; font-weight: 700;">Let’s add some movies!</p>
                           </div>`
         homeBtn.addEventListener("click", () => {})
-      }
-
       } 
     }
 
