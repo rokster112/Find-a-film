@@ -34,29 +34,6 @@ body {
   z-index: -1;
 }
 
-/* .nav {
-  width: 550px;
-  height: 208px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-size: cover;
-  background-position: 0 720px;
-} */
-
-/* .nav::before {
-  content: "";
-  position: fixed;
-  width: 550px;
-  height: 208px;
-  background-image: url("https://s3-alpha-sig.figma.com/img/dafe/fd94/40637dd9b0240098474b6d8dd9487d8c?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=FBfuJ9DpfzYkR7dr8D3LRm74hn-Z5fXsnEzf8UfOhu5inzRyPCUoUAOJmK6ryHbNqLvr5PMoUyoOe3iHAGo09PUkB6o4D0nHBfVoDVAQxd2a-leMtoTvTJsbpZ9NhRVGNxp5A~-P7bNVxUfNznbouoa4P29QyjZTGqjmaDW0SAOMR2sDx~6R9Y6cYOsNXIrYM7Emwkb-78k8p~jucpAJRyM2ZiiT7Pbb1v~9upNslKzo1UwpMnd-bdwpI6v2BW4BPkBcR-~-7Byg3W1GSR8krCA2RHe9H4hjZ6DweT-fQ4kZE4Ymnt3WV9Jp86oNrKhkJ-QALDP2f4EPCtVpGI2dRQ__");
-  background: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-  background-size: cover;
-  background-position: 0 720px;
-} */
-
 .nav-headings__container {
   display: flex;
   flex-direction: row;
